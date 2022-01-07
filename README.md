@@ -6,16 +6,15 @@ The Deploy CLI is a way to more easily release doolittle services.
 1. Run `npm install -g` to install doolittle-deploy.
 1. In your home directory, create a .doolittle-deploy folder `mkdir ~/.doolittle-deploy`
 1. Now create a config.json file inside that directory that looks like
-```
-{
-  "jiraUser": "ben@weldnorthanalytics.com",
-  "jiraApikey": "fmL9RcFAKEKEYetuR4322",
-  "jiraUri": "https://wn-doolittle.atlassian.net",
-  "jiraReleaseFilterId": 10009
-}
-```
-but replace the jiraUser and jiraApikey with ones specific to your JIRA user.
-
+    ```
+    {
+      "jiraUser": "ben@weldnorthanalytics.com",
+      "jiraApikey": "fmL9RcFAKEKEYetuR4322",
+      "jiraUri": "https://wn-doolittle.atlassian.net",
+      "jiraReleaseFilterId": 10009
+    }
+    ```
+    but replace the jiraUser and jiraApikey with ones specific to your JIRA user.
 1. To test, run `doolittle-deploy release-notes` and you should see generated release notes.
 
 
