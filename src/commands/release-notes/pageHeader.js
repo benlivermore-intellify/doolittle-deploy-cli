@@ -1,10 +1,11 @@
-function pageHeader(readerVersion, lastWeight) {
+const weightStartNum = 9999999999999;
+function pageHeader(readerVersion) {
   const todaysDate = new Date();
   const formattedDate = `${todaysDate.getMonth() + 1}-${todaysDate.getDate()}-${todaysDate.getFullYear()}`;
   return `---
 title: "Release Notes ${formattedDate} [${readerVersion}]"
 date: ${todaysDate.toISOString()}
-weight: ${lastWeight - 2}
+weight: ${weightStartNum - todaysDate.getTime()}
 ---
 `;
 }
